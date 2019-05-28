@@ -1,29 +1,42 @@
-// import formatDistance from './_lib/formatDistance/index.js'
-// import formatLong from './_lib/formatLong/index.js'
-// import formatRelative from './_lib/formatRelative/index.js'
-// import localize from './_lib/localize/index.js'
-// import match from './_lib/match/index.js'
+"use strict";
 
-/**
- * @type {Locale}
- * @category Locales
- * @summary Bulgarian locale.
- * @language Bulgarian
- * @iso-639-2 bul
- * @author Nikolay Stoynov [@arvigeus]{@link https://github.com/arvigeus}
- */
-// var locale = {
-//   formatDistance: formatDistance,
-//   formatLong: formatLong,
-//   formatRelative: formatRelative,
-//   localize: localize,
-//   match: match,
-//   options: {
-//     weekStartsOn: 1 /* Monday */,
-//     firstWeekContainsDate: 1
-//   }
-// }
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 
-// export default locale
+let _index = require("./_lib/formatDistance/index.js");
 
-throw new Error('bg locale is currently unavailable. Please check the progress of converting this locale to v2.0.0 in this issue on Github: TBA')
+let _index2 = _interopRequireDefault(_index);
+
+let _index3 = require("./_lib/formatLong/index.js");
+
+let _index4 = _interopRequireDefault(_index3);
+
+let _index5 = require("./_lib/formatRelative/index.js");
+
+let _index6 = _interopRequireDefault(_index5);
+
+let _index7 = require("./_lib/localize/index.js");
+
+let _index8 = _interopRequireDefault(_index7);
+
+let _index9 = require("./_lib/match/index.js");
+
+let _index10 = _interopRequireDefault(_index9);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+let locale = {
+  formatDistance: _index2.default,
+  formatLong: _index4.default,
+  formatRelative: _index6.default,
+  localize: _index8.default,
+  match: _index10.default,
+  options: {
+    weekStartsOn: 1 /* Monday */
+    , firstWeekContainsDate: 1 /* First week of new year contains Jan 1st  */
+  }
+};
+
+exports.default = locale;
+module.exports = exports["default"];
